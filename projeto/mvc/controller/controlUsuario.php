@@ -1,7 +1,7 @@
 <?php
     include '../model/modelUsuario.php';
 
-    //criando condicional de cadastroe login. Helena
+    //criando condicional de cadastro e login. Helena
 if(isset($_GET["acao"])){
     $acao = $_GET["acao"];
     
