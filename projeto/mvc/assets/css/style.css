@@ -1,32 +1,93 @@
-
-/* todas as propreidade de estilo*/
-h1 {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: Arial, Helvetica, sans-serif;
     color: black;
-    text-align: center;
+    border: none;
 }
 
 body {
+    background-image: url('/img/fundo\ origin.jpg');
+    background-size: cover;
+}
+
+textarea:focus, input:focus {
+    outline: none;
+}
+
+a, label {
+    font-size: .8rem;
+}
+
+a:hover {
+    color: blue;
+}
+
+/* Container Login */
+
+#login-container {
+    background-color: white;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 15vh;
+    border-radius: 50px;
     text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.sucesso {
-    color: black;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+/* formulário */
+
+form {
+    margin-top: 30px;
+    margin-bottom: 40px;
 }
 
-.erro-cadastrar {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-.coluna-login {
+label, input {
+    display: block;
+    width: 100%;
     text-align: left;
 }
 
-.button-login {
-    text-align: center;
+label {
+    font-weight: bold;
 }
 
-.link {
+input {
+    border: 2px solid grey;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+input:focus {
+    border: 2px solid #191970;
+}
+
+input[type="submit"] {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 30px;
     color: black;
+    background-color: rgb(129, 129, 129);
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: rgb(2, 50, 182);
+   
+}
+
+#register-container {
+    text-align: left;
+}
+
+#formulario-container {
+    text-align: center;
 }

@@ -33,44 +33,19 @@
         <?php
         }
         ?>
-
-    <h1>Cadastro</h1>
-    <!-- adicionei a acao de cadastrar no action. Helena-->
-    <!-- Organizei o formulario, OBS: falta centralizar. Heliton-->
-    <div class="container">
-        <div class="col 5 coluna-cadastro">
-        
-        <!--adicionei a acao de cadastro mandando para o arquivo CONTROL. Helena-->
+ <div id="formulario-container">
+    <h1>Cadastro</h1> 
         <form action="mvc/controller/controlUsuario.php?acao=cad" method="post">
-                <!-- Troquei os input pelo do boostrap. Heliton-->
-                <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="Nome Completo" name=nome>
-                <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="Email" name="email">
-                <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="Telefone" name="telefone">
-                <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="CEP" name="cep">
-                <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="Cidade" name="cidade">
-                <input type="password" required class="form-control" id="exampleFormControlInput1" placeholder="Senha" name="senha">
-                <input type="password" required class="form-control" id="exampleFormControlInput1" placeholder="Confirmar Senha" name="confirmarS"><br>
-                <!-- troquei acessar para cadastrar. Helena-->
-                <button type="submit" class="btn btn-primary">Cadastrar</button>
-                <!-- Adicionei o botão para voltar ao login. Heliton-->
-                <a href="viewLogin.php" class="btn btn-dark">Fazer login</a>
-
-                <!--<div class="form-group">
-                    <label for="my-select">Pessoas cadastradas</label>
-                    <select id="my-select" class="form-control" name="">
-                        <option>Selecione uma pessoa</option>
-                
-                    </select>
-                    
-                    <?php/*
-                        $lista = (new controllerUsuario)->listar();
-                        
-                        //var_dump($lista);
-                        print_r($lista[0]->nome);*/
-                    ?>
-                </div>-->
+            <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="Nome Completo" name="nome" autocomplete="off">
+            <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="Email" name="email">
+            <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="Telefone" name="telefone">
+            <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="CEP" name="cep">
+            <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="Cidade" name="cidade">
+            <input type="password" required class="form-control" id="exampleFormControlInput1" placeholder="Senha" name="senha">
+            <input type="password" required class="form-control" id="exampleFormControlInput1" placeholder="Confirmar Senha" name="confirmarS"><br>
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <a href="viewLogin.php" class="btn btn-dark">Fazer login</a>
             </form>
-        </div>
-    </div>
+    </div>  
 </body>     
 </html>

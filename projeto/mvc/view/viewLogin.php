@@ -11,32 +11,21 @@
     <title>Login</title>
 <html>
 <body>
-   
-    <!-- Eu comecei a parte de visual do login. OBs: falta terminar. Heliton-->
-    <h1>Login</h1>
-    <div class="container">
-        <div class="col 5 coluna-login">
-        <!--adicionei a acao de login mandando para o arquivo CONTROL. Helena-->
-        <form action="../Controller/controllerUsuario.php?acao=login" method="post">
-            <form>
-                <div class="form-group">
-                    <label for="exampleInputEmail1">Email</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                </div>
-                <div class="form-group">
-                    <label for="exampleInputPassword1">Senha</label>
-                    <input type="password" class="form-control" id="exampleInputPassword1">
-                </div>
-                <div class="form-group link">
-                    <a href="#" class="alert-link">Esqueci minha senha</a><br>
-                    <a href="mvc/view/viewCadastro.php" class="alert-link">Criar nova conta</a>
-                </div>
-                <div class="form-group button-login">
-                    <button type="submit" class="btn btn-dark">Entrar</button>
-                </div>               
-            </form>
+    <div id="login-container">
+        <h1>Login</h1>
+            <!--adicionei a acao de login mandando para o arquivo CONTROL. Helena-->
+            <form action="../Controller/controllerUsuario.php?acao=login" method="post">
+            <label for="email">Email</label>
+            <input type="emaiç" name="" id="email" placeholder="Digite o seu email" autocomplete="off">
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="password" placeholder="Digite a sua senha">
+
+            <input type="submit" value="Logar">
+            <div id="register-container">
+                <a href="">Criar conta</a><br>
+                <a href="" id="forgot-pass">Esqueceu a senha?</a>
+            </div>
         </form>
-        </div>
     </div>
 </body>     
 </html>
