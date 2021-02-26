@@ -43,9 +43,12 @@
             <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="Cidade" name="cidade">
             <input type="password" required class="form-control" id="exampleFormControlInput1" placeholder="Senha" name="senha">
             <input type="password" required class="form-control" id="exampleFormControlInput1" placeholder="Confirmar Senha" name="confirmarS"><br>
-            <button type="submit" class="btn btn-primary">Cadastrar</button>
-            <a href="viewLogin.php" class="btn btn-dark">Fazer login</a>
-            </form>
+            <button type="submit" class="btn btn-primary" id="button-cadastrar">Cadastrar</button>
+            <!-- Falta finalizar CSS/HTML da página -->
+            <div id="cadastro-login">
+                <a href="">Login</a>
+            </div>
+        </form>
     </div>  
 </body>     
 </html>

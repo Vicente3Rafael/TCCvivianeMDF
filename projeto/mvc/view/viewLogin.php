@@ -16,7 +16,7 @@
             <!--adicionei a acao de login mandando para o arquivo CONTROL. Helena-->
             <form action="../Controller/controllerUsuario.php?acao=login" method="post">
             <label for="email">Email</label>
-            <input type="emaiç" name="" id="email" placeholder="Digite o seu email" autocomplete="off">
+            <input type="email" name="" id="email" placeholder="Digite o seu email" autocomplete="off">
             <label for="password">Senha</label>
             <input type="password" name="password" id="password" placeholder="Digite a sua senha">
 

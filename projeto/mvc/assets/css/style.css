@@ -89,5 +89,23 @@ input[type="submit"]:hover {
 }
 
 #formulario-container {
+    background-color: white;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 20px;
+    margin-top: 5vh;
+    border-radius: 50px;
     text-align: center;
+    border: 1px solid;
+    margin-bottom: 5vh;
+}
+
+#button-cadastrar {
+    border-radius: 10px;
+}
+
+#cadastro-login {
+    text-align: center;
+
 }
