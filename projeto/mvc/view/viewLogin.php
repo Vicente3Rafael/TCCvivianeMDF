@@ -20,7 +20,7 @@
             <label for="password">Senha</label>
             <input type="password" name="password" id="password" placeholder="Digite a sua senha">
             <button type="submit" class="btn btn-primary" id="button-cadastrar">Entrar</button>
-            <!--<input type="submit" value="Logar">-->
+            
             <div id="register-container">
                 <a href="">Criar conta</a><br>
                 <a href="" id="forgot-pass">Esqueceu a senha?</a>
