@@ -95,7 +95,7 @@ input[type="submit"]:hover {
     margin-right: auto;
     padding: 10px 20px;
     margin-top: 5vh;
-    border-radius: 5px;
+    border-radius: 20px;
     text-align: center;
     border: 1px solid;
     margin-bottom: 5vh;
@@ -108,4 +108,19 @@ input[type="submit"]:hover {
 #cadastro-login {
     text-align: center;
 
+}
+
+#button-cadastrar {
+    width: 100px;
+}
+
+#cadproduto-container {
+    text-align: center;
+    background-color: rgb(247, 247, 247);
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 30px;
+    margin-top: 10vh;
+    border-radius: 20px;
 }

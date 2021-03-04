@@ -31,11 +31,10 @@
         }
         ?>
 
-    <h1>Cadastro</h1>
-    <div class="container">
-        <div class="col 5 coluna-cadastro">
-        <form action="mvc/controller/controlProduto.php?acao=cad" method="post">
-                <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="Descrição do Produto" name="n_descricao">
+    <div id="cadproduto-container">
+        <h1>Cadastro</h1>
+            <form action="mvc/controller/controlProduto.php?acao=cad" method="post">
+                <input type="text" required class="form-control" id="exampleFormControlInput2" placeholder="Descrição do Produto" name="n_descricao">
                 <input type="number" required class="form-control" id="exampleFormControlInput1" placeholder="Quantidade" name="n_quantidade">
                 <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="Valor" name="n_valor">
                 <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="Altura" name="n_altura">
@@ -43,7 +42,6 @@
                 <input type="text" required class="form-control" id="exampleFormControlInput1" placeholder="Profundidade" name="n_profundidade">
                 <button type="submit" class="btn btn-primary">Cadastrar</button>
             </form>
-        </div>
     </div>
 </body>     
 </html>

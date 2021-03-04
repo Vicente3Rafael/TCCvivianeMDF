@@ -19,8 +19,8 @@
             <input type="email" name="" id="email" placeholder="Digite o seu email" autocomplete="off">
             <label for="password">Senha</label>
             <input type="password" name="password" id="password" placeholder="Digite a sua senha">
-
-            <input type="submit" value="Logar">
+            <button type="submit" class="btn btn-primary" id="button-cadastrar">Entrar</button>
+            <!--<input type="submit" value="Logar">-->
             <div id="register-container">
                 <a href="">Criar conta</a><br>
                 <a href="" id="forgot-pass">Esqueceu a senha?</a>
