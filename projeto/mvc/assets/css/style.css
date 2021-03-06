@@ -8,8 +8,10 @@
 }
 
 body {
-    background-image: url('/img/fundo\ origin.jpg');
-    background-size: cover;
+    background-image: url('/img/marmorepreto.jpg');
+    background-position: top left;
+    /* background-repeat: repeat; */
+    /* background-size: cover; */
 }
 
 textarea:focus, input:focus {
