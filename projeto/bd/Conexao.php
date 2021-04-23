@@ -12,7 +12,7 @@ class Conexao
             case 'dev':
                 $servername = "localhost";     
                 $username = "root";
-                $password = "usbw";
+                $password = "";
                 $dbname = "mydb"; 
                 break; 
             case 'tes':
@@ -33,7 +33,7 @@ class Conexao
         }
 
         try {
-            $conexao = new PDO("mysql:host=$servername;port=3307;dbname=$dbname", "$username", "$password");
+            $conexao = new PDO("mysql:host=$servername;port=3306;dbname=$dbname", "$username", "$password");
 
             $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
