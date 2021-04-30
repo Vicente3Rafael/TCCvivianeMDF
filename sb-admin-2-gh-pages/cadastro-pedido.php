@@ -42,30 +42,30 @@
                     <h1 class="h3 mb-4 text-gray-800">Cadastro Pedidos</h1>
                     <form class="row g-3">
                         <div class="col-md-3">
-                            <label for="inputEmail4" class="form-label">Produto</label>
+                            <label for="inputEmail4" class="label-espaco espacamento-campos">Produto</label>
                             <input type="email" class="form-control" id="inputEmail4" placeholder="O que o cliente deseja?">
                         </div>    
                         <div class="col-md-3">
-                            <label for="inputEmail4" class="form-label">Cliente</label>
+                            <label for="inputEmail4" class="label-espaco espacamento-campos">Cliente</label>
                             <input type="email" class="form-control" id="inputEmail4" placeholder="Nome Completo">
                         </div>
                         <div class="col-md-4">
-                            <label for="inputEmail4" class="form-label">Endereço</label>
+                            <label for="inputEmail4" class="label-espaco espacamento-campos">Endereço</label>
                             <input type="email" class="form-control" id="inputEmail4" placeholder="Onde vai ser a Entrega?">
                         </div>
-                        <div class="col-md-1">
-                            <label for="inputPassword4" class="form-label">Data</label>
+                        <div class="col-md-1 espacamento-campos">
+                            <label for="inputPassword4" class="label-espaco">Data</label>
                             <input type="password" class="form-control" id="inputPassword4" placeholder="Hoje">
                         </div>
-                        <div class="col-1">
-                            <label for="inputAddress" class="form-label">Data</label>
+                        <div class="col-1 espacamento-campos">
+                            <label for="inputAddress" class="label-espaco">Data</label>
                             <input type="text" class="form-control" id="inputAddress" placeholder="Entrega">
                         </div>
-                        <div class="col-md-3">
-                            <label for="inputZip" class="form-label">Descrição</label>
+                        <div class="col-md-3 espacamento-campos">
+                            <label for="inputZip" class="label-espaco">Descrição</label>
                             <input type="text" class="form-control" id="inputZip" placeholder="Medidas, observações">
                         </div>
-                        <div class="col-12">
+                        <div class="col-12 espacamento">
                             <button type="submit" class="btn btn-primary">Cadastrar</button>
                         </div>
                     </form>

@@ -42,46 +42,38 @@
                     <h1 class="h3 mb-4 text-gray-800">Cadastro Clientes</h1>
                     <form class="row g-3">
                         <div class="col-md-4">
-                            <label for="inputEmail4" class="form-label">Nome Completo</label>
+                            <label for="inputEmail4" class="label-espaco espacamento-campos">Nome Completo</label>
                             <input type="email" class="form-control" id="inputEmail4">
                         </div>    
                         <div class="col-md-4">
-                            <label for="inputEmail4" class="form-label">Email</label>
+                            <label for="inputEmail4" class="label-espaco espacamento-campos">Email</label>
                             <input type="email" class="form-control" id="inputEmail4">
                         </div>
                         <div class="col-md-4">
-                            <label for="inputPassword4" class="form-label">Senha</label>
+                            <label for="inputPassword4" class="label-espaco espacamento-campos">Senha</label>
                             <input type="password" class="form-control" id="inputPassword4">
                         </div>
                         <div class="col-4">
-                            <label for="inputAddress" class="form-label">Endereço</label>
+                            <label for="inputAddress" class="label-espaco espacamento-campos">Endereço</label>
                             <input type="text" class="form-control" id="inputAddress" placeholder="Rua Marechal Deodoro">
                         </div>
                         <div class="col-md-3">
-                            <label for="inputZip" class="form-label">Complemento</label>
+                            <label for="inputZip" class="label-espaco espacamento-campos">Complemento</label>
                             <input type="text" class="form-control" id="inputZip" placeholder="Casa, Apartamento, Estúdio ou Andar">
                         </div>
                         <div class="col-1">
-                            <label for="inputAddress2" class="form-label">Número</label>
+                            <label for="inputAddress2" class="label-espaco espacamento-campos">Número</label>
                             <input type="text" class="form-control" id="inputAddress2" placeholder="0000">
                         </div>
                         <div class="col-md-2">
-                            <label for="inputCity" class="form-label">Cidade</label>
+                            <label for="inputCity" class="label-espaco espacamento-campos">Cidade</label>
                             <input type="text" class="form-control" id="inputCity" placeholder="Curitiba">
                         </div>
                         <div class="col-md-2">
-                            <label for="inputState" class="form-label">Estado</label>
+                            <label for="inputState" class="label-espaco espacamento-campos">Estado</label>
                             <input type="text" class="form-control" id="inputState" placeholder="Paraná">
                         </div>
-                        <div class="col-12">
-                            <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                                Check me out
-                            </label>
-                            </div>
-                        </div>
-                        <div class="col-12">
+                        <div class="col-12 espacamento">
                             <button type="submit" class="btn btn-primary">Cadastrar</button>
                         </div>
                     </form>
