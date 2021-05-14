@@ -26,7 +26,9 @@
           <li><a class="nav-link scrollto" href="#portfolio">Portfólio</a></li>
           <li><a class="nav-link scrollto" href="#vantagens">Vantagens</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contato</a></li>
+          <li><a class="nav-link scrollto" href="">Login / Registrar</a></li>
           <li><a class="getstarted scrollto" href="#contact">Vamos começar</a></li>
+          <li><a class="bi bi-whatsapp icone-whatsapp" target="_blank" href="https://wa.me/message/M5VCQMNKWNMML1"></a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -367,8 +369,9 @@
             </a>
             <p>Realize seu sonho junto com a gente!</p>
             <div class="social-links mt-3">
-              <a href="https://www.facebook.com/Viviane-Vaz-MDF-104005794531743" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="https://www.instagram.com/vivianevaz__mdf/" class="instagram"><i class="bi bi-instagram bx bxl-instagram"></i></a>
+              <a href="https://www.facebook.com/Viviane-Vaz-MDF-104005794531743" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="https://www.instagram.com/vivianevaz__mdf/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="https://wa.me/message/M5VCQMNKWNMML1" target="_blank" class="whatsapp"><i class="bi bi-whatsapp"></i></a>
             </div>
           </div>
 
@@ -401,14 +404,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>FlexStart</span></strong>. All Rights Reserved
-      </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <strong>Viviane Vaz MDF 2021 &copy;</strong> | Todos os direitos reservados
       </div>
     </div>
   </footer><!-- End Footer -->
