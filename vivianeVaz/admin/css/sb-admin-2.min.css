@@ -9905,6 +9905,7 @@ a:focus {
   background: url(../img/LOGO-VIVIANE-PRETO.png);
   background-position: center;
   background-size: 100%;
+  background-position-x: 20px;
 }
 .bg-login-image-viviane-fundo {
   background: url(../img/LOGO-VIVIANE-PRETO.png);

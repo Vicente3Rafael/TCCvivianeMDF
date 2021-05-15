@@ -588,6 +588,8 @@ pre code {
   flex-wrap: wrap;
   margin-right: -0.75rem;
   margin-left: -0.75rem;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 .no-gutters {
@@ -2346,10 +2348,22 @@ fieldset:disabled a.btn {
   pointer-events: none;
 }
 
+.btn-primary-black {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000;
+}
+
 .btn-primary {
   color: #fff;
   background-color: #4e73df;
   border-color: #4e73df;
+}
+
+.btn-primary-black:hover {
+  color: #fff;
+  background-color: #2e59d9;
+  border-color: #2653d4;
 }
 
 .btn-primary:hover {
@@ -10649,15 +10663,15 @@ a:focus {
 }
 
 .sidebar-dark .sidebar-heading {
-  color: rgba(255, 255, 255, 0.4);
+  color: rgb(0, 0, 0);
 }
 
 .sidebar-dark .nav-item .nav-link {
-  color: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.8);
 }
 
 .sidebar-dark .nav-item .nav-link i {
-  color: rgba(255, 255, 255, 0.3);
+  color: rgb(0, 0, 0);
 }
 
 .sidebar-dark .nav-item .nav-link:active, .sidebar-dark .nav-item .nav-link:focus, .sidebar-dark .nav-item .nav-link:hover {

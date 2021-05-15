@@ -12,7 +12,7 @@
 <body class="bg-gradient-primary-viviane">
 
     <div class="container">
-
+ 
         <!-- Outer Row -->
         <div class="row justify-content-center">
 
@@ -44,14 +44,16 @@
                                                 <label class="custom-control-label" for="customCheck">Lembrar de mim</label>
                                             </div>
                                         </div>
-                                        <a href="index.html" class="btn btn-primary btn-user btn-block">
+                                        <a href="index.html" class="btn btn-primary-black btn-user btn-block">
                                             Entrar
                                         </a>
-                                        <hr>
                                     </form>
                                     <hr>
                                     <div class="text-center">
-                                        <a class="small" href="forgot-password.html">Esqueceu sua senha?</a>
+                                        <a class="small" href="forgot-password.php">Esqueceu sua senha?</a>
+                                    </div>
+                                    <div class="text-center">
+                                        <a class="small" href="../../index.php">Home</a>
                                     </div>
                                 </div>
                             </div>
