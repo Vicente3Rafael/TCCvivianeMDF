@@ -31,6 +31,28 @@ class Orcamento{
         $conexao = null;  
     }
 
+    public function getAllOrcamentos(){
+        $conexao = Conexao::abrirConexao();
+
+        $sql = "SELECT * FROM orcamentos";
+
+        $result = $conexao->query($sql);
+        
+        if($result != null){
+            $orcamentos = $result->fetchAll();
+            return $orcamentos;
+        }
+        return null;
+    }
+
+    public function deleteOrcamento($id) {
+        $conexao = Conexao::abrirConexao();
+
+        $sql = "DELETE FROM orcamentos WHERE id = $id";
+
+        $conexao->query($sql);
+    }
+
     function getProduto(){
         return $this->produto;
     }

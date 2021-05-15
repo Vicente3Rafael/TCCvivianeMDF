@@ -1,20 +1,11 @@
-<?php
-    session_start();
-
-    $clientes = array();
-    if(isset($_SESSION['clientes'])){
-        $clientes = json_decode($_SESSION["clientes"]);
-    }
-?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
     <?php include '../estrutura/head.php'; ?>
 
     <title>Viviane Vaz MDF - Cadastro</title>
 
 </head>
-
 <body id="page-top">
     <?php
         $retorno = "";
@@ -37,60 +28,25 @@
         }
         $retorno = "";    
     ?>
-
-    <!-- Page Wrapper -->
     <div id="wrapper">
 
-    <?php
-
-        include '../estrutura/sidebar.php';
-
-    ?>
-
-
-    <!-- Content Wrapper -->
+    <?php include '../estrutura/sidebar.php'; ?>
     <div id="content-wrapper" class="d-flex flex-column">
-
-        <!-- Main Content -->
         <div id="content">
 
-        <?php
+        <?php include '../estrutura/topbar.php'; ?>
 
-            include '../estrutura/topbar.php';
-
-        ?>   
-
-            <!-- Begin Page Content -->
             <div class="container-fluid">
-
-                <!-- Page Heading -->
                 <div style="max-width: 600px;margin: auto;">
-                    <h1 class="h3 mb-4 text-gray-800">Cadastro Orçamentos</h1>
-                    <form class="row g-3" method="POST" action="../controllers/controllerOrcamento.php?acao=cad">
+                    <h1 class="h3 mb-4 text-gray-800">Cadastro Produto</h1>
+                    <form class="row g-3" method="POST" action="../controllers/controllerProduto.php?acao=cad">
                         <div class="col-md-6">
-                            <label for="inputEmail4" class="label-espaco espacamento-campos">Produto</label>
-                            <input type="text" class="form-control" id="inputProduct" name="inputProduct">
+                            <label for="inputName" class="label-espaco espacamento-campos">Nome</label>
+                            <input type="text" class="form-control" id="inputName" name="inputName">
                         </div>    
                         <div class="col-md-6">
-                            <label for="inputEmail4" class="label-espaco espacamento-campos">Cliente</label>
-                            <select type="text" class="form-control" id="inputClient" name="inputClient">
-                                <option value=""></option>
-                            <?php foreach ($clientes as $cliente){ ?>
-                                <option value="<?php $cliente->nome ?>"><?php echo $cliente->nome; ?></option>
-                            <?php } ?>
-                            </select> 
-                        </div>
-                        <div class="col-md-8">
-                            <label for="inputAddress" class="label-espaco espacamento-campos">Endereço de Entrega</label>
-                            <input type="text" class="form-control" id="inputAddress" name="inputAddress" placeholder="Rua Marechal Deodoro">
-                        </div>
-                        <div class="col-md-4">
-                            <label for="inputZip" class="label-espaco espacamento-campos">Data de Entrega</label>
-                            <input type="Date" class="form-control" id="inputDate" name="inputDate">
-                        </div>
-                        <div class="col-md-12">
-                            <label for="inputAddress2" class="label-espaco espacamento-campos">Descricao</label>
-                            <input type="text" class="form-control" id="inputDescription" name="inputDescription" nameplaceholder="n°">
+                            <label for="inputCategory" class="label-espaco espacamento-campos">Categoria</label>
+                            <input type="text" class="form-control" id="inputCategory" name="inputCategory">
                         </div>
                         <div class="col-12 espacamento">
                             <button type="submit" class="btn btn-primary">Cadastrar</button>
@@ -98,12 +54,7 @@
                     </form>
                 </div>
             </div>
-            <!-- /.container-fluid -->
-
         </div>
-        <!-- End of Main Content -->
-
-        <!-- Footer -->
         <footer class="sticky-footer bg-white">
             <div class="container my-auto">
                 <div class="copyright text-center my-auto">
@@ -111,20 +62,13 @@
                 </div>
             </div>
         </footer>
-        <!-- End of Footer -->
-
     </div>
-    <!-- End of Content Wrapper -->
-
     </div>
-    <!-- End of Page Wrapper -->
 
-    <!-- Scroll to Top Button-->
     <a class="scroll-to-top rounded" href="#page-top">
         <i class="fas fa-angle-up"></i>
     </a>
 
-    <!-- Logout Modal-->
     <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
@@ -144,16 +88,9 @@
         </div>
     </div>
 
-    <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Core plugin JavaScript-->
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
-
 </body>
-
 </html>

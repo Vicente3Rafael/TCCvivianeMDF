@@ -38,6 +38,28 @@ class Cliente{
         $conexao = null;  
     }
 
+    public function getAllClientes(){
+        $conexao = Conexao::abrirConexao();
+
+        $sql = "SELECT * FROM clientes";
+
+        $result = $conexao->query($sql);
+        
+        if($result != null){
+            $clientes = $result->fetchAll();
+            return $clientes;
+        }
+        return null;
+    }
+
+    public function deleteCliente($id) {
+        $conexao = Conexao::abrirConexao();
+
+        $sql = "DELETE FROM clientes WHERE id = $id";
+
+        $conexao->query($sql);
+    }
+
     function getNome(){
         return $this->nome;
     }

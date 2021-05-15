@@ -4,10 +4,22 @@
 if(isset($_GET["acao"])){
     $acao = $_GET["acao"];
     
+    if (isset($_GET["id"])) {
+        $id = $_GET["id"];
+    }
+
     switch ($acao) {
         case 'cad':
             $obj = new controllerUsuario();
             $obj->cadastrar();
+            break;
+        case 'list':
+            $obj = new controllerUsuario();
+            $obj->getAllUsers();
+            break;
+        case 'del':
+            $obj = new controllerUsuario();
+            $obj->deleteUser($id);
             break;
         default:
             break;
@@ -37,9 +49,31 @@ class controllerUsuario{
         
         if($retorno){
             header("Location: ../cadastros/cadastro-usuario.php?r=1");
-        }else{
+        }else {
             header("Location: ../cadastros/cadastro-usuario.php?r=2");
         }  
-    }    
+    } 
+    
+    function getAllUsers(){
+        $user = new Usuario();
+
+        $_SESSION["usuarios"] = $user->getAllUsers();
+
+        $_SESSION["usuarios"] = json_encode($_SESSION["usuarios"]);
+
+        if($_SESSION["usuarios"] != null) {
+            header('Location: ../tabelas/usuarios.php');
+        }else {
+            header("Location: ../tabelas/usuarios.php?r=null");
+        }
+    }
+
+    function deleteUser($id) {
+        $user = new Usuario();
+        
+        $user->deleteUser($id);
+
+        $this->listar();
+    }
 }
 ?>      

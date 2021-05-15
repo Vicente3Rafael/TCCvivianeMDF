@@ -1,22 +1,18 @@
 <?php
 include "../../bancoDeDados/Conexao.php";
 
-class Usuario{
+class Produto{
     private $nome;
-    private $email;
-    private $senha;
     private $categoria;
     
-    public function cadastrar(Usuario $usuario){
+    public function cadastrar(Produto $produto){
         $conexao = Conexao::abrirConexao();
 
-        $nome = $usuario->getNome();
-        $email = $usuario->getEmail();
-        $senha = $usuario->getSenha();
-        $categoria = $usuario->getCategoria();
+        $nome = $produto->getNome();
+        $categoria = $produto->getCategoria();
         
-        $sql = "INSERT INTO usuarios (nome, email, senha, categoria)
-        VALUES ('".$nome."','".$email."', '".$senha."', '".$categoria."') ";
+        $sql = "INSERT INTO produtos (nome, categoria)
+        VALUES ('".$nome."', '".$categoria."') ";
     
         try{
             $conexao->exec($sql);
@@ -29,24 +25,24 @@ class Usuario{
         $conexao = null;  
     }
 
-    public function getAllUsers(){
+    public function getAllProdutosss(){
         $conexao = Conexao::abrirConexao();
 
-        $sql = "SELECT * FROM usuarios";
+        $sql = "SELECT * FROM produtos";
 
         $result = $conexao->query($sql);
         
         if($result != null){
-            $users = $result->fetchAll();
-            return $users;
+            $produtos = $result->fetchAll();
+            return $produtos;
         }
         return null;
     }
 
-    public function deleteUser($id) {
+    public function deleteProduto($id) {
         $conexao = Conexao::abrirConexao();
 
-        $sql = "DELETE FROM usuarios WHERE id = $id";
+        $sql = "DELETE FROM produtos WHERE id = $id";
 
         $conexao->query($sql);
     }
@@ -57,26 +53,6 @@ class Usuario{
 
     public function setNome($nome){
         $this->nome = $nome;
-
-        return $this;
-    }
-
-    function getEmail(){
-        return $this->email;
-    }
-
-    public function setEmail($email){
-        $this->email = $email;
-
-        return $this;
-    }
-
-    function getSenha(){
-        return $this->senha;
-    }
-
-    public function setSenha($senha){
-        $this->senha = $senha;
 
         return $this;
     }

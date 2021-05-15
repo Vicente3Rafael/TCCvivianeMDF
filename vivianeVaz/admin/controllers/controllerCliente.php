@@ -1,18 +1,26 @@
 <?php
     include '../model/Cliente.php';
+    session_start();
 
 if(isset($_GET["acao"])){
     $acao = $_GET["acao"];
-    
+
+    if (isset($_GET["id"])) {
+        $id = $_GET["id"];
+    }
+
     switch ($acao) {
-        case 'login':
-            $obj = new controllerCliente();
-            $obj->realizarLogin();
-            break;
-        
         case 'cad':
             $obj = new controllerCliente();
             $obj->cadastrar();
+            break;
+        case 'list':
+            $obj = new controllerCliente();
+            $obj->getAllClientes();
+            break;
+        case 'del':
+            $obj = new controllerCliente();
+            $obj->deleteCliente($id);
             break;
         default:
             break;
@@ -20,10 +28,6 @@ if(isset($_GET["acao"])){
 }    
 
 class controllerCliente{
-    function realizarLogin(){
-
-    }
-
     function cadastrar(){
         $nome = $_POST["inputName"];
         $email = $_POST["inputEmail"];
@@ -52,6 +56,26 @@ class controllerCliente{
         }else{
             header("Location: ../cadastros/cadastro-cliente.php?r=2");
         }  
-    }    
+    }
+    
+    function getAllClientes(){
+        $cliente = new Cliente();
+
+        $_SESSION["clientes"] = $cliente->getAllClientes();
+
+        $_SESSION["clientes"] = json_encode($_SESSION["clientes"]);
+
+        if($_SESSION["clientes"] != null) {
+            header('Location: ../tabelas/clientes.php');
+        }else {
+            header("Location: ../tabelas/clientes.php?r=null");
+        }
+    }
+
+    function deleteCliente($id) {
+        $cliente = new Cliente();
+        
+        $cliente->deleteCliente($id);
+    }
 }
 ?>      

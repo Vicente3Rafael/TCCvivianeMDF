@@ -18,22 +18,22 @@
     </div>
     <!-- Nav Item - Tables -->
     <li class="nav-item">
-        <a class="nav-link" href="../tabelas/orcamentos.php">
+        <a class="nav-link" href="../controllers/controllerOrcamento.php?acao=list">
             <i class="fas fa-fw fa-table"></i>
             <span>Orçamentos</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="../tabelas/produtos.php">
+        <a class="nav-link" href="../controllers/controllerProduto.php?acao=list">
             <i class="fas fa-fw fa-table"></i>
             <span>Produtos</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="../tabelas/clientes.php">
+        <a class="nav-link" href="../controllers/controllerCliente.php?acao=list">
             <i class="fas fa-fw fa-table"></i>
             <span>Clientes</span></a>
     </li>
     <li class="nav-item">
-        <a class="nav-link" href="../tabelas/usuarios.php">
+        <a class="nav-link" href="../controllers/controllerUsuario.php?acao=list">
             <i class="fas fa-fw fa-table"></i>
             <span>Usuários</span></a>
     </li>

@@ -3,7 +3,7 @@
 
     <?php
 
-        include 'estrutura/head.html';
+        include '../estrutura/head.php';
 
     ?>
 
