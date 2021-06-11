@@ -37,7 +37,7 @@ class Conexao
 
             $conexao->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             
-            //echo "Está funcionando!";
+            echo "Está funcionando!";
             
         } catch (PDOException $e) {
             echo 'ERROR: ' . $e->getMessage();
