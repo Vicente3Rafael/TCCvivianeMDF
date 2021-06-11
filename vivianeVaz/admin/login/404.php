@@ -3,7 +3,7 @@
 
 <?php
 
-    include 'estrutura/head.html';
+    include '../estrutura/head.php';
 
 ?>
 
@@ -16,7 +16,7 @@
 
     <?php
 
-        include 'estrutura/sidebar.html';
+        include '../estrutura/sidebar.php';
 
     ?>
 
@@ -28,7 +28,7 @@
 
             <?php
 
-                include 'estrutura/topbar.html';
+                include '../estrutura/topbar.php';
 
             ?>   
 
