@@ -2,10 +2,9 @@
     session_start();
 
     $users = array();
-
-    if(isset($_SESSION['usuarios'])){
+    if(isset($_SESSION["usuarios"])){
         $users = json_decode($_SESSION["usuarios"]);
-    }    
+    }   
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">

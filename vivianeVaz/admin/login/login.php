@@ -28,25 +28,18 @@
                                     <div class="text-center">
                                         <h1 class="h4 text-gray-900 mb-4">Bem Vindo!</h1>
                                     </div>
-                                    <form class="user">
+                                    <form method="POST" action="../controllers/controllerLogin.php" class="user">
                                         <div class="form-group">
                                             <input type="email" class="form-control form-control-user"
-                                                id="exampleInputEmail" aria-describedby="emailHelp"
+                                                id="InputEmail" name="email_login" aria-describedby="emailHelp"
                                                 placeholder="E-mail">
                                         </div>
                                         <div class="form-group">
                                             <input type="password" class="form-control form-control-user"
-                                                id="exampleInputPassword" placeholder="Senha">
+                                                id="InputPassword" name="senha_login" placeholder="Senha">
                                         </div>
-                                        <div class="form-group">
-                                            <div class="custom-control custom-checkbox small">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck">
-                                                <label class="custom-control-label" for="customCheck">Lembrar de mim</label>
-                                            </div>
-                                        </div>
-                                        <a href="index.html" class="btn btn-primary-black btn-user btn-block">
-                                            Entrar
-                                        </a>
+                                        <button type="submit" class="btn btn-primary-black btn-user btn-block">Entrar</button>
+                                        
                                     </form>
                                     <hr>
                                     <div class="text-center">

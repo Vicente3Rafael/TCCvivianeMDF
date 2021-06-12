@@ -47,6 +47,7 @@ class controllerProduto{
     } 
     
     function getAllProdutos(){
+        session_start();
         $produto = new Produto();
 
         $_SESSION["produtos"] = $produto->getAllProdutosss();

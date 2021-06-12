@@ -31,7 +31,9 @@ class controllerUsuario{
         $nome = $_POST["inputName"];
         $email = $_POST["inputEmail"];
         $senha = $_POST["inputPassword"];
+        $senha = md5($senha);
         $senha2 = $_POST["inputPassword2"];
+        $senha2 = md5($senha2);
         $categoria = $_POST["inputCategory"];
 
         if($senha != $senha2){
@@ -55,6 +57,7 @@ class controllerUsuario{
     } 
     
     function getAllUsers(){
+        session_start();
         $user = new Usuario();
 
         $_SESSION["usuarios"] = $user->getAllUsers();
@@ -62,8 +65,10 @@ class controllerUsuario{
         $_SESSION["usuarios"] = json_encode($_SESSION["usuarios"]);
 
         if($_SESSION["usuarios"] != null) {
-            header('Location: ../tabelas/usuarios.php');
+            //var_dump($_SESSION["usuarios"]);
+            header("Location: ../tabelas/usuarios.php");
         }else {
+            //echo "deu erro";
             header("Location: ../tabelas/usuarios.php?r=null");
         }
     }

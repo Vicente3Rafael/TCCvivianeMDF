@@ -59,6 +59,7 @@ class controllerCliente{
     }
     
     function getAllClientes(){
+        session_start();
         $cliente = new Cliente();
 
         $_SESSION["clientes"] = $cliente->getAllClientes();

@@ -53,6 +53,7 @@ class controllerOrcamento{
     }
     
     function getAllOrcamentos(){
+        session_start();
         $orcamento = new Orcamento();
 
         $_SESSION["orcamentos"] = $orcamento->getAllOrcamentos();
