@@ -21,6 +21,7 @@ if(isset($_GET["acao"])){
         case 'del':
             $obj = new controllerCliente();
             $obj->deleteCliente($id);
+            $obj->getAllClientes();
             break;
         default:
             break;
@@ -77,6 +78,14 @@ class controllerCliente{
         $cliente = new Cliente();
         
         $cliente->deleteCliente($id);
+
+        $result = $cliente->deleteCliente($id);
+
+        if($result){
+            header("Location: ../tabelas/clientes.php");
+        }else{
+            //header("Location: ../tabelas/clientes.php?r=3");
+        }
     }
 }
 ?>      
