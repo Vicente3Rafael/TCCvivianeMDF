@@ -27,15 +27,15 @@
                                         <p class="mb-4">Nós entendemos, coisas acontecem. Basta inserir seu endereço de e-mail abaixo
                                             e enviaremos um link para redefinir sua senha!</p>
                                     </div>
-                                    <form class="user">
+                                    <form class="user" method="post" action="../controllers/recuperar.php">
                                         <div class="form-group">
-                                            <input type="email" class="form-control form-control-user"
+                                        <input type="email" name="email" class="form-control form-control-user"
                                                 id="exampleInputEmail" aria-describedby="emailHelp"
                                                 placeholder="Insira o endereço de e-mail...">
                                         </div>
-                                        <a href="login.html" class="btn btn-primary btn-user btn-block">
-                                            Redefinir senha
-                                        </a>
+                                        <div>
+                                            <input type="submit" value="Redefinir senha" name="esqueciasenha" class="btn btn-primary btn-user btn-block">
+                                        </div>
                                     </form>
                                     <hr>
                                     <div class="text-center">
