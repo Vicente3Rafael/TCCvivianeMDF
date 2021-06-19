@@ -29,8 +29,9 @@
             <div class="alert alert-danger erro-cadastrar" role="alert">
                 Cadastro não realizado!
             </div>
-    <?php
+    <?php   
         }
+        
         $retorno = "";    
     ?>
 

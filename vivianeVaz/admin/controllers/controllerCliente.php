@@ -21,6 +21,7 @@ if(isset($_GET["acao"])){
         case 'del':
             $obj = new controllerCliente();
             $obj->deleteCliente($id);
+            $obj->getAllClientes();
             break;
         default:
             break;

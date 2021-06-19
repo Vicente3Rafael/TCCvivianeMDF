@@ -12,7 +12,7 @@ class Conexao
             case 'dev':
                 $servername = "localhost";     
                 $username = "root";
-                $password = "admin";
+                $password = "";
                 $dbname = "db_tcc"; 
                 break; 
             case 'tes':

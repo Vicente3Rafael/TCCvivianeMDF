@@ -57,7 +57,9 @@ class Cliente{
 
         $sql = "DELETE FROM clientes WHERE id = $id";
 
-        $conexao->query($sql);
+        $result = $conexao->query($sql);
+
+        return $result;
     }
 
     function getNome(){

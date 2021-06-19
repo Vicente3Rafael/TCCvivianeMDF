@@ -46,7 +46,8 @@
                                         <a class="small" href="forgot-password.php">Esqueceu sua senha?</a>
                                     </div>
                                     <div class="text-center">
-                                        <a class="small" href="../../index.php">Home</a>
+                                        <a class="small" href="../../index.php">Voltar</a>
+                                        <!-- <a class="small" href="register.php">Cadastrar-se</a> -->
                                     </div>
                                 </div>
                             </div>
