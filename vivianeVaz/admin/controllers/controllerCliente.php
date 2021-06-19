@@ -77,6 +77,8 @@ class controllerCliente{
         $cliente = new Cliente();
         
         $cliente->deleteCliente($id);
+
+        $this->getAllClientes();
     }
 }
 ?>      

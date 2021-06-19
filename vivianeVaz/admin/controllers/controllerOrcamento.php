@@ -71,6 +71,8 @@ class controllerOrcamento{
         $orcamento = new Orcamento();
         
         $orcamento->deleteOrcamento($id);
+
+        $this->getAllOrcamentos();
     }
 }
 ?>      

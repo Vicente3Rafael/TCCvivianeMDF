@@ -65,6 +65,7 @@ class controllerProduto{
         $produto = new Produto();
         
         $produto->deleteProduto($id);
+        $this->getAllProdutos();
     }
 }
 ?>      

@@ -78,7 +78,7 @@ class controllerUsuario{
         
         $user->deleteUser($id);
 
-        $this->listar();
+        $this->getAllUsers();
     }
 }
 ?>      
