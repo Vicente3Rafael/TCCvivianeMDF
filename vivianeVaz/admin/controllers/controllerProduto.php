@@ -20,7 +20,7 @@ if(isset($_GET["acao"])){
             break;
         case 'del':
             $obj = new controllerProduto();
-            $obj->deleteUser($id);
+            $obj->deleteProduto($id);
             break;
         default:
             break;
